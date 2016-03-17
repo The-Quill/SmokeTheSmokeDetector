@@ -6,8 +6,8 @@
 // @match *://chat.stackoverflow.com/rooms/*
 // @match *://chat.meta.stackexchange.com/rooms/*
 // @author The-Quill
-// @downloadURL  https://raw.githubusercontent.com/The-Quill/badge-oneboxer/master/badge-oneboxer.user.js
-// @updateURL https://raw.githubusercontent.com/The-Quill/badge-oneboxer/master/badge-oneboxer.user.js
+// @downloadURL  https://github.com/The-Quill/SmokeTheSmokeDetector/raw/master/SmokeTheSmokeDetector.user.js
+// @updateURL https://github.com/The-Quill/SmokeTheSmokeDetector/raw/master/SmokeTheSmokeDetector.user.js
 // @run-at document-end
 // ==/UserScript==
 
