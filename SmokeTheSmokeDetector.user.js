@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name SmokeTheSmokeDetector
 // @description No more smokey spam
-// @version 0.0.1
+// @version 0.0.2
 // @match *://chat.stackexchange.com/rooms/*
 // @match *://chat.stackoverflow.com/rooms/*
 // @match *://chat.meta.stackexchange.com/rooms/*
@@ -57,7 +57,11 @@ function hideSmokeyMessage(message){
     var messageText = innerText(message, '.content');
     var isSmokeyResponse = innerText(message, '.mention') === '@SmokeDetector';
     if (messageText.startsWith('sd') || (messageText.startsWith('!!/') && messageText !== '!!/blame' && messageText !== '!!/amiprivileged') || isSmokeyResponse){
-        messageBlock.parentNode.removeChild(messageBlock);
+        var parentNode = message.parentNode;
+        parentNode.removeChild(message);
+        if (parentNode.children.length === 0){
+            messageBlock.style.display = "none";
+        }
         return;
     }
 }
