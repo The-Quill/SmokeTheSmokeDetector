@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name SmokeTheSmokey
+// @name SmokeTheSmokeDetector
 // @description No more smokey spam
 // @version 0.0.1
 // @match *://chat.stackexchange.com/rooms/*
